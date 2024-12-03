@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@3.7.4/dist/vuetify.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@3.7.4/dist/vuetify.min.js"></script>
+    <title>work2 : Vue exam</title>
+</head>
+
+<body>
+    <div id="app">
+        <v-app>
+            <v-container class="fill-height">
+                <v-row justify="center">
+                    <v-col cols="12" md="8" lg="6">
+                        <v-card class="pa-4">
+                            <h1 class="text-center text-h4 mb-4">แบบทดสอบ ภาษาอังกฤษพื้นฐาน</h1>
+                            <div v-if="page == 0" class="text-center">
+                                <p>{{ message }}</p>
+                                <v-btn @click="page = 1" color="primary" elevation="2">
+                                    <v-icon left>mdi-play-circle</v-icon>
+                                    เริ่มการทำแบบทดสอบ
+                                </v-btn>
+                            </div>
+                            <div v-if="page == 1">
+                                <div v-for="(q, i) in qlist" :key="i" class="mb-4">
+                                    <v-card outlined class="pa-3">
+                                        <h3>ข้อที่ {{ i + 1 }}</h3>
+                                        <p v-html="q.title"></p>
+                                        <v-radio-group v-model="answers[i]" class="mt-2">
+                                            <v-radio v-for="(option, idx) in q.options" :key="idx" :label="option"
+                                                :value="idx + 1">
+                                            </v-radio>
+                                        </v-radio-group>
+                                    </v-card>
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <v-btn @click="page = 0" color="error" elevation="2" class="ml-2">
+                                        <v-icon left>mdi-cancel</v-icon>
+                                        เลิกทำข้อสอบ
+                                    </v-btn>
+                                    <v-btn v-if="validate()" @click="grading" color="success" elevation="2">
+                                        <v-icon left>mdi-check</v-icon>
+                                        ตรวจคำตอบ
+                                    </v-btn>
+                                    <v-btn v-else disabled color="grey">
+                                        <v-icon left>mdi-alert-circle</v-icon>
+                                        กรุณาตอบให้ครบ
+                                    </v-btn>
+                                </div>
+                            </div>
+                            <div v-if="page == 2" class="text-center">
+                                <h2 class="mb-4">คุณได้คะแนน {{ score }} / {{ qlist.length }}</h2>
+                                <v-btn @click="page = 0" color="primary" elevation="2">
+                                    <v-icon left>mdi-home</v-icon>
+                                    กลับไปที่หน้าแรก
+                                </v-btn>
+                            </div>
+                        </v-card>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </v-app>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+        const { createVuetify } = Vuetify;
+        const vuetify = createVuetify();
+
+        const app = createApp({
+            data() {
+                return {
+                    message: "แบบทดสอบนี้ เป็นแบบทดสอบรายวิชาภาษาอังกฤษพื้นฐาน เป็นงานในสัปดาห์ที่ 2 Vue",
+                    qlist: [],
+                    answers: [],
+                    score: 0,
+                    page: 0,
+                };
+            },
+            mounted() {
+                this.load_data();
+            },
+            methods: {
+                async load_data() {
+                    var res = await fetch("quiz2.json");
+                    this.qlist = await res.json();
+                },
+                validate() {
+                    for (var a in this.qlist) {
+                        if (!this.answers[a]) return false;
+                    }
+                    return true;
+                },
+                grading() {
+                    var n = 0;
+                    for (var a in this.qlist) {
+                        if (this.answers[a] == this.qlist[a].answer) {
+                            n++;
+                        }
+                    }
+                    this.score = n;
+                    this.page = 2;
+                    return n;
+                },
+            },
+        });
+        app.use(vuetify).mount("#app");
+    </script>
+</body>
+
+</html>

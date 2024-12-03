@@ -1,0 +1,202 @@
+[
+    {
+        "title" : "If you are __ cold, have a hot drink to warm you up.",
+        "options": [
+            "feel",
+            "felt",
+            "feels",
+            "feeling"
+        ],
+        "answer": 4
+    },
+    {
+        "title" : "There __ empty seats left in the hall.",
+        "options": [
+            "were no",
+            "is no",
+            "were not",
+            "are not"
+        ],
+        "answer": 1
+    },
+    {
+        "title" : "The trip to Paris will __ an ideal opportunity to practice my French.",
+        "options": [
+            "is",
+            "be",
+            "are",
+            "was"
+        ],
+        "answer": 2
+    },
+    {
+        "title" : "If you’re agreeable to our proposal, we’ll______ahead.",
+        "options": [
+            "going",
+            "gone",
+            "go",
+            "went"
+        ],
+        "answer": 3
+    },
+    {
+        "title" : "We must deal with __ before it gets out of hand.",
+        "options": [
+            "the situate",
+            "the situation",
+            "the situated",
+            "the situates"
+        ],
+        "answer": 2
+    },
+    {
+        "title" : "She has been employed at this job_____ 2005.",
+        "options": [
+            "since",
+            "at",
+            "for",
+            "on"
+        ],
+        "answer": 1
+    },
+    {
+        "title" : "The trip has been_____to include a few other events.",
+        "options": [
+            "extend",
+            "extending",
+            "extends",
+            "extended"
+        ],
+        "answer": 4
+    },
+    {
+        "title" : "How long have you __ unemployed?",
+        "options": [
+            "be",
+            "are",
+            "were",
+            "been"
+        ],
+        "answer": 4
+    },
+    {
+        "title" : "Do you __ anyone to help out in the shop?",
+        "options": [
+            "needful",
+            "need",
+            "needs",
+            "needed"
+        ],
+        "answer": 2
+    },
+    {
+        "title" : "People in Italy __ living under strict lockdown conditions for three months.",
+        "options": [
+            "has to",
+            "has been",
+            "have been",
+            "have"
+        ],
+        "answer": 3
+    },
+    {
+        "title" : "A lot of people __ complained about the noise.",
+        "options": [
+            "has to",
+            "has been",
+            "have been",
+            "have"
+        ],
+        "answer": 4
+    },
+    {
+        "title" : "I want to hear your explanation for __ late.",
+        "options": [
+            "being",
+            "is",
+            "been",
+            "be"
+        ],
+        "answer": 1
+    },
+    {
+        "title" : "Make sure your hands are clean before you __your dinner.",
+        "options": [
+            "have been",
+            "has been",
+            "have",
+            "have to"
+        ],
+        "answer": 3
+    },
+    {
+        "title" : "He __ completed his project by next Saturday.",
+        "options": [
+            "has to",
+            "has been",
+            "have been",
+            "will have"
+        ],
+        "answer": 4
+    },
+    {
+        "title" : "I __ across this book in a secondhand bookstore last month.",
+        "options": [
+            "comes",
+            "came",
+            "coming",
+            "come"
+        ],
+        "answer": 2
+    },
+    {
+        "title" : "He’s about the same age ______you are.",
+        "options": [
+            "of",
+            "for",
+            "with",
+            "as"
+        ],
+        "answer": 4
+    },
+    {
+        "title" : "Before you go to visit him, you______ make sure he’s at home.",
+        "options": [
+            "would",
+            "could",
+            "should",
+            "shall"
+        ],
+        "answer": 3
+    },
+    {
+        "title" : "I was just _____into the bath when the phone rang.",
+        "options": [
+            "getting",
+            "got",
+            "get",
+            "gets"
+        ],
+        "answer": 1
+    },
+    {
+        "title" : "Schools around the world have been closed __ the coronavirus pandemic.",
+        "options": [
+            "as long as",
+            "because of",
+            "although",
+            "despite"
+        ],
+        "answer": 2
+    },
+    {
+        "title" : "Researchers discovered that people __ eat more ultra-processed foods have a higher risk of cancer.",
+        "options": [
+            "whom",
+            "whose",
+            "who",
+            "which"
+        ],
+        "answer": 3
+    }
+]
