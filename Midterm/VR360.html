@@ -1,0 +1,466 @@
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.5.2/dist/aframe-extras.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-sky color="#87CEEB"></a-sky>
+        <a-plane position="0 0 -23.65" rotation="-90 0 0" width="10" height="8.6" color="#e3dbcf"
+            scale="3.5 6.5 1"></a-plane>
+        <a-plane position="0 2.7 -4.3" rotation="" width="10" height="8.6" color="#d7c4a2" scale="2 0.627 1"></a-plane>
+        <a-plane position="0 2.7 4.3" rotation="-180 0 -180" width="10" height="8.6" color="#d7c4a2"
+            scale="3.5 0.627 1"></a-plane>
+        <a-plane position="-17.5 2.7 -23.699" rotation="0 90 0" width="10" height="8.6" color="#d7c4a2"
+            scale="5.6 0.627 1"></a-plane>
+        <a-plane position="-10 2.7 -27.95" rotation="0 -90 0" width="10" height="8.6" color="#d7c4a2"
+            scale="4.735 0.627 1"></a-plane>
+        <a-plane position="-13.75 2.7 -51.6" rotation="" width="10" height="8.6" color="#d7c4a2"
+            scale="0.75 0.627 1"></a-plane>
+        <a-plane position="10 2.7 -27.95" rotation="0 90 0" width="10" height="8.6" color="#d7c4a2"
+            scale="4.735 0.627 1"></a-plane>
+        <a-plane position="17.5 2.7 -23.699" rotation="0 -90 0" width="10" height="8.6" color="#d7c4a2"
+            scale="5.6 0.627 1"></a-plane>
+        <a-plane position="13.75 2.7 -51.6" rotation="" width="10" height="8.6" color="#d7c4a2"
+            scale="0.75 0.627 1"></a-plane>
+        <!--กล้อง-->
+        <a-camera position="0 1.9 0" wasd-controls="acceleration: 35">
+            <a-sound src="sound/honey jam by massobeats.mp3" autoplay="true" loop="true" volume="0.5"></a-sound>
+            <a-cursor></a-cursor>
+        </a-camera>
+        <!--จุดเริ่มต้น-->
+        <a-image src="img/chicken-rice.png" position="0 2 -4" width="3" height="2"></a-image>
+        <a-entity gltf-model="asset/Whiteboard.glb" scale="4 4 4" position="0 1.87 -4.1"></a-entity>
+        <a-text value="How To ทำข้าวมันไก่" font="font/sarabun.fnt" fontImage="font/sarabun.png" position="0 3.5 -4"
+            color="#000000" width="10" align="center"></a-text>
+        <a-entity gltf-model="asset/Whiteboard.glb" scale="5 1.7 4" position="0 3.5 -4.1"></a-entity>
+        <!--จัดทำโดย-->>
+        <a-entity gltf-model="asset/Whiteboard.glb" scale="4.8 5.75 1" position="0 2.3305 4"
+            rotation="-180 0 -180"></a-entity>
+        <a-text value="จัดทำโดย" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="0 3.5 3.99"
+            color="#000000" width="8" rotation="-180 0 -180" align="center"></a-text>
+        <a-text value="นางสาวสวิตตา แสงวรรณกูล 653380043-4" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="2 2.8 3.99" color="#000000" width="5" rotation="-180 0 -180"></a-text>
+        <a-text value="นายณธฬ จันทร์หอม             653380195-1" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="2 2.3 3.99" color="#000000" width="5" rotation="-180 0 -180"></a-text>
+        <a-text value="นางสาวทักษพร มูลมณี          653380198-5" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="2 1.8 3.99" color="#000000" width="5" rotation="-180 0 -180"></a-text>
+        <a-text value="นายธีรภัทร์ แก้วโบราณ          653380203-8" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="2 1.25 3.99" color="#000000" width="5" rotation="-180 0 -180"></a-text>
+        <!--ประวัติ-->
+        <a-entity gltf-model="asset/Arrow.glb" scale="5 3.5 1" position="-17.49 2.5 -2.5" rotation="0 90 0"></a-entity>
+        <a-text value="ประวัติความเป็นมา" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="-17.45 2.5 1.2"
+            color="#000000" width="10" align="center" rotation="0 90 0"></a-text>
+        <a-entity gltf-model="asset/Whiteboard.glb" scale="3.45234 1.60381 4" position="-17.49 2.5 1.2"
+            rotation="0 90 0"></a-entity>
+
+        <a-image src="img/China.png" position="-17.49 3.5 -6.5" width="3" height="2" rotation="0 90 0"
+            scale="0.8 0.8 0.8"></a-image>
+        <a-text value="ข้าวมันไก่มีต้นกำเนิดมาจากมณฑลไหหลำ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-17.49 2.1 -6.5" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <a-text value="เกาะทางใต้ในประเทศจีน" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-17.49 1.75 -6.5" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <a-image src="img/chicken-rice-01.jpg" position="-17.45 3.5 -13" width="3" height="2"
+            rotation="0 90 0"></a-image>
+        <a-text value="ข้าวมันไก่แบบดั้งเดิมของไหหลำมีเอกลักษณ์ที่การปรุงไก่" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-17.49 2.1 -13" color="#000000" width="5" align="center"
+            rotation="0 90 0"></a-text>
+        <a-text value="ด้วยการต้มจนเนื้อนุ่ม หนังไก่เรียบเนียน และเสิร์ฟพร้อม" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-17.49 1.75 -13" color="#000000" width="5" align="center"
+            rotation="0 90 0"></a-text>
+        <a-text value="กับข้าวที่หุงในน้ำซุปไก่ผสมไขมันไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-17.49 1.4 -13" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <a-text value="เพื่อให้ได้รสชาติที่หอมมันและอร่อยกลมกล่อม" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-17.49 1.05 -13" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <a-image src="img/Soy-Sauce-Lobo.jpg" position="-17.45 3.5 -19.5" width="3" height="2"
+            rotation="0 90 0"></a-image>
+        <a-text value="เมื่อข้าวมันไก่ถูกนำเข้าสู่ประเทศสมาชิกอาเซียน" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-17.49 2.1 -19.5" color="#000000" width="5" align="center"
+            rotation="0 90 0"></a-text>
+        <a-text value="ก็ได้รับการปรับสูตรให้เข้ากับความชอบของประเทศนั้นๆ" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-17.49 1.75 -19.5" color="#000000" width="5" align="center"
+            rotation="0 90 0"></a-text>
+        <a-text value="เช่น ในประเภทไทยมีปรุงน้ำจิ้มให้มีรสเปรี้ยว เค็ม หวาน" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-17.49 1.4 -19.5" color="#000000" width="5" align="center"
+            rotation="0 90 0"></a-text>
+        <a-text value="เผ็ด ผสมผสานกันลงตัว เป็นต้น" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-17.49 1.05 -19.5" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <!--แต่ละภูมิภาค-->>
+        <a-entity gltf-model="asset/Whiteboard.glb" scale="5 1.60381 4" position="-17.49 2.5 -26"
+            rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="asset/Arrow.glb" scale="5 3.5 1" position="-17.49 2.5 -30.4" rotation="0 90 0"></a-entity>
+        <a-text value="ความแตกต่างในแต่ละภูมิภาค" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-17.45 2.5 -26" color="#000000" width="10" align="center" rotation="0 90 0"></a-text>
+        <a-image src="img/China.png" position="-17.49 3.5 -33.5" width="3" height="2" rotation="0 90 0"
+            scale="0.8 0.8 0.8"></a-image>
+        <a-text value="ประเทศจีน" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="-17.49 2.4 -33.5"
+            color="#000000" width="7" align="center" rotation="0 90 0"></a-text>
+        <a-text value="การปรุง: ใช้ไก่ต้มหรือไก่นึ่งที่ปรุงอย่างเรียบง่าย" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-17.49 1.85 -31" color="#000000" width="5" align="left"
+            rotation="0 90 0"></a-text>
+        <a-text value="เน้นความนุ่มของเนื้อไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-17.49 1.55 -31.83" color="#000000" width="5" align="left" rotation="0 90 0"></a-text>
+        <a-text value="ข้าว:       หุงในน้ำซุปไก่ที่ผสมกับไขมันไก่และขิง" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-17.49 1.2 -31" color="#000000" width="5" align="left"
+            rotation="0 90 0"></a-text>
+        <a-text value="น้ำจิ้ม:    มีรสชาติอ่อน เน้นซีอิ๊วผสมขิงสับและน้ำมันงา" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-17.49 0.85 -31" color="#000000" width="5" align="left"
+            rotation="0 90 0"></a-text>
+
+        <a-image src="img/Flag_of_Singapore.png" position="-17.49 3.5 -40" width="3" height="2" rotation="0 90 0"
+            scale="0.8 0.8 0.8"></a-image>
+        <a-text value="ประเทศสิงคโปร์" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="-17.49 2.4 -40"
+            color="#000000" width="7" align="center" rotation="0 90 0"></a-text>
+        <a-text value="การปรุง: ต้มไก่ในน้ำซุปที่มีส่วนผสมของสมุนไพร" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-17.49 1.85 -37.5" color="#000000" width="5" align="left"
+            rotation="0 90 0"></a-text>
+        <a-text value="ข้าว:       ข้าวมันหุงด้วยน้ำซุปที่เข้มข้น มีรสชาติหอมมัน" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-17.49 1.5 -37.5" color="#000000" width="5" align="left"
+            rotation="0 90 0"></a-text>
+        <a-text value="น้ำจิ้ม:    มีหลายแบบ เช่น น้ำจิ้มขิง น้ำจิ้มพริก" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-17.49 1.15 -37.5" color="#000000" width="5" align="left"
+            rotation="0 90 0"></a-text>
+        <a-text value="และซีอิ๊วดำหวาน" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-17.49 0.85 -38.31" color="#000000" width="5" align="left" rotation="0 90 0"></a-text>
+
+        <a-image src="img/Flag_of_Thailand.png" position="-17.49 3.5 -46.5" width="3" height="2" rotation="0 90 0"
+            scale="0.8 0.8 0.8"></a-image>
+        <a-text value="ประเทศไทย" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="-17.49 2.4 -46.5"
+            color="#000000" width="7" align="center" rotation="0 90 0"></a-text>
+        <a-text value="การปรุง: มีความใกล้เคียงกับสิงคโปร์และจีน" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-17.49 1.85 -44" color="#000000" width="5" align="left" rotation="0 90 0"></a-text>
+        <a-text value="น้ำจิ้ม:    มีรสจัดจ้าน เน้นเปรี้ยว เค็ม หวาน และเผ็ด" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-17.49 1.50 -44" color="#000000" width="5" align="left"
+            rotation="0 90 0"></a-text>
+        <a-text value="โดยใช้น้ำส้มสายชู ซีอิ๊ว เต้าเจี้ยว พริก ขิง และกระเทียม" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-17.49 1.20 -44.81" color="#000000" width="5" align="left"
+            rotation="0 90 0"></a-text>
+
+        <a-image src="img/Flag_of_Malaysia.png" position="-13.5 3.5 -51.55" width="3" height="2" rotation=""
+            scale="0.8 0.8 0.8"></a-image>
+        <a-text value="ประเทศมาเลเซีย" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="-13.5 2.4 -51.55"
+            color="#000000" width="7" align="center" rotation=""></a-text>
+        <a-text value="การปรุง: มีความใกล้เคียงกับสิงคโปร์" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-15.5 1.85 -51.55" color="#000000" width="5" align="left" rotation="0 0 0"></a-text>
+        <a-text value="เพิ่มเติมด้วยเครื่องเทศที่เข้มข้น" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-14.69 1.55 -51.55" color="#000000" width="5" align="left" rotation="0 0 0"></a-text>
+        <a-text value="น้ำจิ้ม:    มีส่วนผสมของซอสพริกและถั่วเหลือง" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-15.5 1.20 -51.55" color="#000000" width="5" align="left"
+            rotation="0 0 0"></a-text>
+
+        <a-image src="img/Flag_of_Vietnam.png" position="-10.05 3.5 -46.5" width="3" height="2" rotation="0 -90 0"
+            scale="0.8 0.8 0.8"></a-image>
+        <a-text value="ประเทศเวียดนาม" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="-10.05 2.4 -46.5"
+            color="#000000" width="7" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="การปรุง: ใช้ไก่ต้มที่หั่นชิ้นเล็ก ๆ เสิร์ฟบนข้าวมัน" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-10.05 1.85 -49" color="#000000" width="5" align="left"
+            rotation="0 -90 0"></a-text>
+        <a-text value="ที่ปรุงด้วยขมิ้นและน้ำซุป" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-10.05 1.55 -48.19" color="#000000" width="5" align="left" rotation="0 -90 0"></a-text>
+        <a-text value="ข้าว:       มีสีเหลืองจากขมิ้นและมีกลิ่นหอมของใบลอเรล" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-10.05 1.20 -49" color="#000000" width="5" align="left"
+            rotation="0 -90 0"></a-text>
+        <a-text value="น้ำจิ้ม:    ใช้น้ำจิ้มที่ผสมพริก น้ำมะนาว น้ำปลา" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-10.05 0.85 -49" color="#000000" width="5" align="left"
+            rotation="0 -90 0"></a-text>
+        <a-text value="และน้ำตาล" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="-10.05 0.55 -48.19"
+            color="#000000" width="5" align="left" rotation="0 -90 0"></a-text>
+        <!--ความหลากหลาย-->
+        <a-entity gltf-model="asset/Whiteboard.glb" scale="3.8 1.60381 4" position="-10.05 2.5 -41.5"
+            rotation="0 -90 0"></a-entity>
+        <a-text value="ตัวอย่างสูตรข้าวมันไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-10.1 2.5 -41.5" color="#000000" width="10" align="center" rotation="0 -90 0"></a-text>
+        <a-entity gltf-model="asset/Arrow.glb" scale="5 3.5 1" position="-10.05 2.5 -37.7"
+            rotation="0 -90 0"></a-entity>
+        <a-image src="img/fried-chicken-rice.jpg" position="-10.05 3.5 -34.6" width="3" height="2" rotation="0 -90 0"
+            scale="0.8 0.8 0.8"></a-image>
+        <a-text value="ข้าวมันไก่ทอด" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="-10.05 2.4 -34.6"
+            color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ใช้ไก่ชุบแป้งทอดกรอบแทนไก่ต้ม" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-10.05 1.85 -34.6" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="น้ำจิ้มปรับให้เผ็ดจัดจ้าน หรือเสิร์ฟพร้อมซอสพริกหวาน" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-10.05 1.5 -34.6" color="#000000" width="5" align="center"
+            rotation="0 -90 0"></a-text>
+
+        <a-image src="img/grill-chicken-rice.jpg" position="-10.05 3.5 -28.1" width="3" height="2" rotation="0 -90 0"
+            scale="0.8 0.8 0.8"></a-image>
+        <a-text value="ข้าวมันไก่ย่าง" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="-10.05 2.4 -28.1"
+            color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ใช้ไก่ที่หมักด้วยเครื่องเทศ แล้วนำมาย่าง" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-10.05 1.85 -28.1" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="น้ำจิ้มมักเป็นน้ำจิ้มแจ่วหรือน้ำจิ้มซีฟู้ด" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-10.05 1.5 -28.1" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+
+        <a-image src="img/Heathly-chicken-rice.jpg" position="-10.05 3.5 -21.6" width="3" height="2" rotation="0 -90 0"
+            scale="0.8 0.8 0.8"></a-image>
+        <a-text value="ข้าวมันไก่เพื่อสุขภาพ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-10.05 2.4 -21.6" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ใช้ไก่อบหรือไก่ต้มแบบไม่ใส่ไขมัน" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-10.05 1.85 -21.6" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ข้าวมันเปลี่ยนเป็นข้าวกล้อง หรือข้าวไรซ์เบอร์รี" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-10.05 1.5 -21.6" color="#000000" width="5" align="center"
+            rotation="0 -90 0"></a-text>
+        <a-text value="ลดปริมาณน้ำมันและเกลือในน้ำจิ้ม" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-10.05 1.15 -21.6" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+
+        <a-image src="img/korean-flag.png" position="-10.05 3.5 -15.1" width="3" height="2" rotation="0 -90 0"
+            scale="0.8 0.8 0.8"></a-image>
+        <a-text value="ข้าวมันไก่สไปซี่เกาหลี" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-10.05 2.4 -15.1" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ใช้ไก่ทอดหรือไก่ย่างคลุกซอสโคชูจัง (ซอสเผ็ดเกาหลี)" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-10.05 1.85 -15.1" color="#000000" width="5" align="center"
+            rotation="0 -90 0"></a-text>
+        <a-text value="ข้าวมันหุงแบบดั้งเดิม แต่ปรับรสให้ออกหวานมัน" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-10.05 1.5 -15.1" color="#000000" width="5" align="center"
+            rotation="0 -90 0"></a-text>
+
+        <a-image src="img/japan.png" position="-10.05 3.5 -8.6" width="3" height="2" rotation="0 -90 0"
+            scale="0.8 0.8 0.8"></a-image>
+        <a-text value="ข้าวมันไก่ญี่ปุ่น" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-10.05 2.4 -8.6" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ใช้ไก่คาราอาเกะ (ไก่ทอดญี่ปุ่น)" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="-10.05 1.85 -8.6" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ข้าวผสมงาขาวและสาหร่าย เพิ่มกลิ่นหอมแบบญี่ปุ่น" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="-10.05 1.5 -8.6" color="#000000" width="5" align="center"
+            rotation="0 -90 0"></a-text>
+        <!--ส่วนผสม-->>
+        <a-entity gltf-model="asset/Whiteboard.glb" scale="4.27 1.604 4" position="17.49 2.5 1.2"
+            rotation="0 -90 0"></a-entity>
+        <a-text value="วัตถุดิบในการทำข้าวมันไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.45 2.5 1.2" color="#000000" width="10" align="center" rotation="0 -90 0"></a-text>
+        <a-entity gltf-model="asset/Arrow.glb" scale="5 3.5 1" position="17.49 2.5 -2.7" rotation="0 90 0"></a-entity>
+        <a-image src="img/ingredient.jpg" position="17.49 3 -5.8" width="4" height="3" rotation="0 -90 0"
+            scale="0.8 0.8 0.8"></a-image>
+        <a-text value="สูตรจาก: https://www.wongnai.com/recipes/" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 1.4 -5.8" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="hainanese-chicken-rice" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 1.15 -5.8" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+
+        <a-text value="วัตถุดิบข้าวมันไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="17.49 4.5 -10"
+            color="#000000" width="6" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="น่องไก่/สะโพกไก่/อกไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 4 -10" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="กระเทียม 3-4 หัว" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="17.49 3.65 -10"
+            color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="รากผักชี 6 ราก" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="17.49 3.30 -10"
+            color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ขิงแก่หั่นเป็นแผ่นบาง 6 แผ่น" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 2.95 -10" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="พริกไทย 30 เม็ด" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="17.49 2.6 -10"
+            color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="เกลือ 1.5 ช้อนโต็ะ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 2.25 -10" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="น้ำตาลกรวด 1.5 ช้อนโต็ะ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 1.9 -10" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ข้าวสารดิบ 2 ถ้วยตวง" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 1.55 -10" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ชีอิ๊วขาว 3 ช้อนโต็ะ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 1.2 -10" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="น้ำมันพืช 0.5 ช้อนโต็ะ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 0.85 -10" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="แตงกาวและผักชี" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="17.49 0.5 -10"
+            color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+
+        <a-text value="วัตถุดิบน้ำจิ้มข้าวมันไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 4.5 -13" color="#000000" width="6" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="เต้าเจี้ยว 6 ช้อนโต๊ะ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 4 -13" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ขิงแก่สับ 3 ช้อนโต๊ะ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 3.65 -13" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="พริกขึ้หนูหั่น 2 ช้อนโต๊ะ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 3.30 -13" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ซีอิ๊วหวาน 1 ช้อนโต๊ะ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 2.95 -13" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="มะนาว 1 ช้อนโต็ะ" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="17.49 2.6 -13"
+            color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="น้ำตาลทราย 2 ช้อนโต็ะ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 2.25 -13" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="น้ำต้มสุก 1 ช้อนโต็ะ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 1.9 -13" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+
+        <a-text value="วัตถุดิบน้ำซุปฟัก" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="17.49 4.5 -16"
+            color="#000000" width="6" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ฟักหั่น 0.5 หัว" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="17.49 4 -16"
+            color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="น้ำต้มไก่ 500 มิลลิลิตร" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 3.65 -16" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ซีอิ๊วขาว 1 ช้อนโต็ะ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 3.30 -16" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="เกลือ 0.5 ช้อนโต๊ะ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 2.95 -16" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <!--วิธีทำ-->
+        <a-entity gltf-model="asset/Whiteboard.glb" scale="2.8 1.604 4" position="17.49 2.5 -20"
+            rotation="0 -90 0"></a-entity>
+        <a-text value="วิธีทำข้าวมันไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="17.45 2.5 -20"
+            color="#000000" width="10" align="center" rotation="0 -90 0"></a-text>
+        <a-entity gltf-model="asset/Arrow.glb" scale="5 3.5 1" position="17.49 2.5 -23" rotation="0 90 0"></a-entity>
+        <a-text value="ขั้นตอนที่ 1 ต้มไก่ + น้ำซุปฟัก" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 4 -27" color="#000000" width="6" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="1.ต้มน้ำซุปต้มไก่ โดยใส่ รากผักชี กระเทียม พริกไทย ขิง" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="17.49 3.5 -27" color="#000000" width="5" align="center"
+            rotation="0 -90 0"></a-text>
+        <a-text value="น้ำตาลกรวด ซีอิ๊วขาว เกลือ เคี่ยวประมาณ 15 นาที" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="17.49 3.15 -27" color="#000000" width="5" align="center"
+            rotation="0 -90 0"></a-text>
+        <a-text value="นำไก่ลงไปต้มต่อจนไก่สุก ใช้เวลาประมาณ 30 นาที" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="17.49 2.8 -27" color="#000000" width="5" align="center"
+            rotation="0 -90 0"></a-text>
+        <a-entity gltf-model="asset/Kitchen Stove.glb" scale="3.3 3.3 3.3" position="16 0 -28.75"
+            rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="asset/Table angle - L.glb" scale="1.12697 1.7 1.12697"
+            position="17.34137 1.27588 -26.19728" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="asset/pot.glb" scale="0.40411 0.40411 0.40411" position="16.6497 1.61832 -27.7614"
+            rotation="0 90 0"><a-sound src="sound/boiling-pot-of-water.mp3" autoplay="true" loop="true"
+                volume="3"></a-sound></a-entity>
+        <a-entity gltf-model="asset/Ginger.glb" scale="0.2 0.2 0.2" position="17.17615 1.38586 -26.48054" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="asset/Salt and Pepper.glb" scale="0.61523 0.61523 0.61523"
+            position="17.22773 1.43195 -27.01397" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="asset/wall_garlic.glb" scale="0.9 0.9 0.9" position="14.95 -3 -22.6" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="asset/raw.glb" scale="0.74553 0.74553 0.74553" position="16.68163 1.68945 -27.84783"
+            rotation="0 90 33.3015"></a-entity>
+        <a-entity gltf-model="asset/Chef Knife.glb" scale="0.1 0.1 0.1" position="16.76785 1.7315 -25.6719"
+            rotation="0 0 -119.11" sound-on-click>
+            <a-sound src="sound/vegetables-cutting.mp3" volume="2"></a-sound></a-entity>
+        <a-entity gltf-model="asset/Cutting Board.glb" scale="0.15 0.15 0.15" position="17.18544 1.36346 -25.6158"
+            rotation="0 90 0"></a-entity>
+
+        <a-text value="2.นำไก่ที่สุกแล้วไปน็อกในน้ำผสมน้ำแข็ง จนไก่เย็น" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="17.49 3.5 -32.5" color="#000000" width="5" align="center"
+            rotation="0 -90 0"></a-text>
+        <a-text value="ใช้เวลาประมาณ 5-10 นาที แล้วนำไก่ขึ้นพักให้สะเด็ดน้ำ" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="17.49 3.15 -32.5" color="#000000" width="5" align="center"
+            rotation="0 -90 0"></a-text>
+        <a-text value="ทาด้วยน้ำมันพืชบางๆ ให้ทั่วชิ้นไก่ พักไว้" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 2.8 -32.5" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+
+        <a-text value="3.น้ำซุปที่ต้มไก่ให้ช้อนมันออกจากน้ำซุป" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 2.2 -32.5" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="เอาออกจนน้ำซุปใส ใส่ฟักที่หั่นแล้วลงไปต้ม" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 1.85 -32.5" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="ปรุงรสด้วยซีอิ๊ว และเกลือ ต้มจนฟักสุก" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 1.5 -32.5" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+
+        <a-text value="ขั้นตอนที่ 2 ทำข้าวมันไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 4 -38" color="#000000" width="6" align="center" rotation="0 -90 0"></a-text>
+        <a-text value="หุงข้าวมันไก่ โดยเจียวกระเทียมกับขิงแก่บุบจนหอม" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="17.49 3.5 -38" color="#000000" width="5" align="center"
+            rotation="0 -90 0"></a-text>
+        <a-text value="ใส่ข้าวสารดิบลงไป ผัดพอเข้ากัน ปรุงรสด้วยเกลือ" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="17.49 3.15 -38" color="#000000" width="5" align="center"
+            rotation="0 -90 0"></a-text>
+        <a-text value="น้ำมันไก่ที่ช้อนไว้ ผัดอีกรอบแล้วเทใส่หม้อหุงข้าว" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="17.49 2.8 -38" color="#000000" width="5" align="center"
+            rotation="0 -90 0"></a-text>
+        <a-text value="ใส่น้ำซุปต้มไก่ลงไป หุงจนข้าวสุก" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="17.49 2.45 -38" color="#000000" width="5" align="center" rotation="0 -90 0"></a-text>
+        <a-entity gltf-model="asset/Kitchen Bar.glb" scale="2.26043 3.40979 3" position="16.825 0 -38.5"
+            rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="asset/Rice Cooker.glb" scale="0.07684 0.07684 0.07684" position="17.15 1.75719 -38.03"
+            rotation="0 -90 0"sound-on-click>
+            <a-sound src="sound/light-switch.mp3" volume="1.5"></a-sound></a-entity>
+
+        <!--Model-->
+        <a-entity gltf-model="asset/chicken.glb" scale="0.35599 0.35599 0.35599" position="10.7277 0.68382 -6.46812"
+            rotation="0 -180 0"></a-entity>
+        <a-entity gltf-model="asset/Chicken2.glb" scale="0.007 0.007 0.007" position="10.57152 0 -7.89971"
+            rotation="0 -180 0"></a-entity>
+        <a-entity gltf-model="asset/Minecraft Chicken.glb" scale="2 2 2" position="10.62457 0.60072 -9.5"
+            rotation="0 90 0" sound-and-move-on-click>
+            <a-sound src="sound/minecraft-chicken-sound.mp3" volume="2"></a-sound>
+        </a-entity>
+        <a-image src="img/baked-chicken-legs.jpg" position="10.05 2.8 -9" width="4" height="3" rotation="0 90 0"
+            scale="0.8 0.8 0.8"></a-image>
+        <!--ทำน้ำจิ้ม-->
+        <a-entity gltf-model="asset/Whiteboard.glb" scale="3.45 1.604 4" position="10 2.5 -17"
+            rotation="0 90 0"></a-entity>
+        <a-text value="วิธีทำน้ำจิ้มข้าวมันไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="10.05 2.5 -17" color="#000000" width="10" align="center" rotation="0 90 0" text=""></a-text>
+        <a-entity gltf-model="asset/Arrow.glb" scale="5 3.5 1" position="10.1 2.5 -20.45" rotation="0 90 0"></a-entity>
+        <a-text value="ขั้นตอนที่ 1 ทำน้ำจิ้มข้าวมันไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="10.1 3.5 -24" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <a-text value="ทำน้ำจิ้มโดยใส่ขิงซอย พริกขี้หนูหั่น เต้าเจี้ยว" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="10.1 3 -24" color="#000000" width="5" align="center"
+            rotation="0 90 0"></a-text>
+        <a-text value="ซีอิ๊วดำหวาน มะนาว น้ำตาลทราย น้ำต้มสุก" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="10.1 2.65 -24" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <a-text value="คนให้เข้ากัน กินคู่ข้าวมันไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="10.1 2.3 -24" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <a-image src="img/wongnai-chicken-rice.png" position="10.1 2.8 -28.5" width="4" height="3" rotation="0 90 0"
+            scale="0.8 0.8 0.8"></a-image>
+
+        <!--คุณค่าทางโภชนาการ-->
+        <a-entity gltf-model="asset/Whiteboard.glb" scale="3.45 1.604 4" position="10 2.5 -33.5"
+            rotation="0 90 0"></a-entity>
+        <a-text value="คุณค่าทางโภชนาการ" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="10.05 2.5 -33.5" color="#000000" width="10" align="center" rotation="0 90 0" text=""></a-text>
+        <a-entity gltf-model="asset/Arrow.glb" scale="5 3.5 1" position="10.1 2.5 -36.8" rotation="0 90 0"></a-entity>
+        <a-text value="พลังงานโดยรวม" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="10.1 3.8 -40"
+            color="#000000" width="6" align="center" rotation="0 90 0"></a-text>
+        <a-text value="ข้าวมันไก่ 1 จาน ให้อยู่ประมาณ 600-800 กิโลแคลอรี" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="10.1 3.4 -40" color="#000000" width="5" align="center"
+            rotation="0 90 0"></a-text>
+        <a-text value="สารอาหารหลัก" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="10.1 3 -40"
+            color="#000000" width="6" align="center" rotation="0 90 0"></a-text>
+        <a-text value="คาร์โบไฮเดรต จาก ข้าวมัน" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="10.1 2.55 -40" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <a-text value="โปรตีน จาก เนื้อไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="10.1 2.2 -40"
+            color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <a-text value="ไขมัน จาก น้ำมันในข้าวมันและเนื้อไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="10.1 1.85 -40" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+
+        <a-text value="สารอาหารรอง" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="10.1 3.8 -45.5"
+            color="#000000" width="6" align="center" rotation="0 90 0"></a-text>
+        <a-text value="วิตามินบี จาก ข้าวมันและไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="10.1 3.4 -45.5" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <a-text value="ธาตุเหล็ก จากเนื้อไก่" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="10.1 3.05 -45.5" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <a-text value="โพแทสเซียม จาก แตงกวา" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="10.1 2.7 -45.5" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <a-text value="ใยอาหาร จาก แตงกวา" font="font/sarabun.fnt" fontimage="font/sarabun.png"
+            position="10.1 2.35 -45.5" color="#000000" width="5" align="center" rotation="0 90 0"></a-text>
+        <a-text value="โซเดียม" font="font/sarabun.fnt" fontimage="font/sarabun.png" position="10.1 1.75 -45.5"
+            color="#000000" width="6" align="center" rotation="0 90 0"></a-text>
+        <a-text value="ข้าวมันไก่ 1 จานมีโซเดียมประมาณ 800-1,200 มิลลิกรัม" font="font/sarabun.fnt"
+            fontimage="font/sarabun.png" position="10.1 1.4 -45.5" color="#000000" width="5" align="center"
+            rotation="0 90 0"></a-text>
+
+        <a-entity gltf-model="asset/chicken2.glb" scale="0.5 0.5 0.5" position="0 7 -40" rotation="0 -360 0"
+            animation__rotate="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 30000"></a-entity>
+    </a-scene>
+    <script>
+        // สร้าง Component สำหรับการเล่นเสียงเมื่อคลิก
+        AFRAME.registerComponent('sound-and-move-on-click', {
+            init: function () {
+                this.el.addEventListener('click', () => {
+                    // เล่นเสียง
+                    const sound = this.el.querySelector('a-sound');
+                    sound.components.sound.playSound();
+
+                    // เริ่มการกระโดด
+                    this.el.setAttribute('animation', {
+                        property: 'position',
+                        form: '10.62457 0.60072 -9.5',
+                        to: '10.62457 0.60072 -17',
+                        dur: 1000,
+                        easing: 'easeInOutQuad',
+                        dir: 'alternate',
+                        loop: true
+                    });
+
+                });
+            }
+        });
+        AFRAME.registerComponent('sound-on-click', {
+            init: function () {
+                this.el.addEventListener('click', () => {
+                    const sound = this.el.querySelector('a-sound');
+                    sound.components.sound.playSound();
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
